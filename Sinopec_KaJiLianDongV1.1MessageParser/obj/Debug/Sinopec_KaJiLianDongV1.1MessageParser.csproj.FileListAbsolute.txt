@@ -1,6 +1,0 @@
-C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Sinopec_KaJiLianDongV1.1MessageParser\bin\Debug\KaJiLianDongV1.1MessageParser.dll.config
-C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Sinopec_KaJiLianDongV1.1MessageParser\bin\Debug\KaJiLianDongV1.1MessageParser.dll
-C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Sinopec_KaJiLianDongV1.1MessageParser\bin\Debug\KaJiLianDongV1.1MessageParser.pdb
-C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Sinopec_KaJiLianDongV1.1MessageParser\obj\Debug\Sinopec_KaJiLianDongV1.1MessageParser.csprojResolveAssemblyReference.cache
-C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Sinopec_KaJiLianDongV1.1MessageParser\obj\Debug\KaJiLianDongV1.1MessageParser.dll
-C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Sinopec_KaJiLianDongV1.1MessageParser\obj\Debug\KaJiLianDongV1.1MessageParser.pdb
