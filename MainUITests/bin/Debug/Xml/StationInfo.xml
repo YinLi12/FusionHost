@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StationInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ver>223</Ver>
+  <Prov_省代号>11</Prov_省代号>
+  <City_地市代码>11</City_地市代码>
+  <Superior_上级单位代号>11111111</Superior_上级单位代号>
+  <S_ID_加油站ID>11111111</S_ID_加油站ID>
+  <POS_P_通讯终端逻辑编号>0</POS_P_通讯终端逻辑编号>
+  <GUN_N_油枪数>4</GUN_N_油枪数>
+  <MZN_单个油枪>
+    <unsignedByte>1</unsignedByte>
+    <unsignedByte>2</unsignedByte>
+    <unsignedByte>3</unsignedByte>
+    <unsignedByte>4</unsignedByte>
+  </MZN_单个油枪>
+</StationInfo>

@@ -1,0 +1,10 @@
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\bin\Debug\MessageParserTest.dll.config
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\bin\Debug\MessageParserTest.dll
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\bin\Debug\MessageParserTest.pdb
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\bin\Debug\KaJiLianDongV1.1MessageParser.dll
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\bin\Debug\KaJiLianDongV1.1MessageParser.pdb
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\obj\Debug\MessageParserTest.csprojResolveAssemblyReference.cache
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\obj\Debug\MessageParserTest.dll
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\obj\Debug\MessageParserTest.pdb
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Test\MessageParserTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

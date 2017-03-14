@@ -1,0 +1,15 @@
+﻿<Window x:Class="SinopecPumpSim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SinopecPumpSim" Height="508.889" Width="636.111">
+    <Grid Name ="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="95">
+            <MenuItem Header="设置" RenderTransformOrigin="-0.217,0.085" Click="MenuItemClick"/>
+        </Menu>
+
+    </Grid>
+</Window>

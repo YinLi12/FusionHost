@@ -1,0 +1,8 @@
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\bin\Debug\Host.exe.config
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\bin\Debug\Host.exe
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\bin\Debug\Host.pdb
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\obj\Debug\Host.csprojResolveAssemblyReference.cache
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\obj\Debug\Host.exe
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\obj\Debug\Host.pdb
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\bin\Debug\log4net.dll
+C:\SinoChem\SinoChem_KaJiLianDong\FusionHost\Host\bin\Debug\log4net.xml

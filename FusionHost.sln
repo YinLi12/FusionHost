@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{64CF8B31-0CD7-43FF-ACDD-65044B324A80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{24982AC7-AA55-41C7-A2E4-86E716F40B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageParserTest", "Test\MessageParserTest\MessageParserTest.csproj", "{A4B372BB-A201-44BD-B1E9-FC3815ED4A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainUI", "MainUI\MainUI.csproj", "{599DCBA1-1E1F-436D-88A2-CFEB7D3651B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainUITests", "MainUITests\MainUITests.csproj", "{858A3C0B-84AA-4658-A8D8-3FCD07ECCBB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinopec_KaJiLianDongV1.1MessageParser", "Sinopec_KaJiLianDongV1.1MessageParser\Sinopec_KaJiLianDongV1.1MessageParser.csproj", "{9C84D0D5-F7A0-4B14-B087-A459E567C153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinopecPumpSim", "SinopecPumpSim\SinopecPumpSim\SinopecPumpSim.csproj", "{34271EC3-A89E-4C5B-B68A-9C0407A451DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64CF8B31-0CD7-43FF-ACDD-65044B324A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CF8B31-0CD7-43FF-ACDD-65044B324A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CF8B31-0CD7-43FF-ACDD-65044B324A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CF8B31-0CD7-43FF-ACDD-65044B324A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B372BB-A201-44BD-B1E9-FC3815ED4A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B372BB-A201-44BD-B1E9-FC3815ED4A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B372BB-A201-44BD-B1E9-FC3815ED4A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B372BB-A201-44BD-B1E9-FC3815ED4A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599DCBA1-1E1F-436D-88A2-CFEB7D3651B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599DCBA1-1E1F-436D-88A2-CFEB7D3651B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599DCBA1-1E1F-436D-88A2-CFEB7D3651B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599DCBA1-1E1F-436D-88A2-CFEB7D3651B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858A3C0B-84AA-4658-A8D8-3FCD07ECCBB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858A3C0B-84AA-4658-A8D8-3FCD07ECCBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858A3C0B-84AA-4658-A8D8-3FCD07ECCBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858A3C0B-84AA-4658-A8D8-3FCD07ECCBB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C84D0D5-F7A0-4B14-B087-A459E567C153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C84D0D5-F7A0-4B14-B087-A459E567C153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C84D0D5-F7A0-4B14-B087-A459E567C153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C84D0D5-F7A0-4B14-B087-A459E567C153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34271EC3-A89E-4C5B-B68A-9C0407A451DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34271EC3-A89E-4C5B-B68A-9C0407A451DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34271EC3-A89E-4C5B-B68A-9C0407A451DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34271EC3-A89E-4C5B-B68A-9C0407A451DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4B372BB-A201-44BD-B1E9-FC3815ED4A76} = {24982AC7-AA55-41C7-A2E4-86E716F40B5B}
+		{858A3C0B-84AA-4658-A8D8-3FCD07ECCBB7} = {24982AC7-AA55-41C7-A2E4-86E716F40B5B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dfw111vstfsa1.wayne.com:8080/tfs/wayne_production_collection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MainUI\\MainUI.csproj
+		SccProjectName1 = MainUI
+		SccLocalPath1 = MainUI
+		SccProjectUniqueName2 = Host\\Host.csproj
+		SccProjectName2 = Host
+		SccLocalPath2 = Host
+		SccProjectUniqueName3 = Sinopec_KaJiLianDongV1.1MessageParser\\Sinopec_KaJiLianDongV1.1MessageParser.csproj
+		SccProjectName3 = Sinopec_KaJiLianDongV1.1MessageParser
+		SccLocalPath3 = Sinopec_KaJiLianDongV1.1MessageParser
+		SccProjectUniqueName4 = MainUITests\\MainUITests.csproj
+		SccProjectTopLevelParentUniqueName4 = FusionHost.sln
+		SccProjectName4 = MainUITests
+		SccLocalPath4 = MainUITests
+		SccProjectUniqueName5 = Test\\MessageParserTest\\MessageParserTest.csproj
+		SccProjectTopLevelParentUniqueName5 = FusionHost.sln
+		SccProjectName5 = Test/MessageParserTest
+		SccLocalPath5 = Test\\MessageParserTest
+		SccProjectUniqueName6 = SinopecPumpSim\\SinopecPumpSim\\SinopecPumpSim.csproj
+		SccProjectName6 = SinopecPumpSim/SinopecPumpSim
+		SccLocalPath6 = SinopecPumpSim\\SinopecPumpSim
+	EndGlobalSection
+EndGlobal

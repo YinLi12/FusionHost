@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Configuration" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Configuration" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PumpSettings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PumpSetting" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Address" type="xs:string" minOccurs="0" />
+                    <xs:element name="PortName" type="xs:string" minOccurs="0" />
+                    <xs:element name="Baudrate" type="xs:string" minOccurs="0" />
+                    <xs:element name="Parity" type="xs:string" minOccurs="0" />
+                    <xs:element name="Databits" type="xs:string" minOccurs="0" />
+                    <xs:element name="Stopbits" type="xs:string" minOccurs="0" />
+                    <xs:element name="Nozzles" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Nozzle" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:simpleContent msdata:ColumnName="Nozzle_Text" msdata:Ordinal="2">
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="Grade" type="xs:string" />
+                                  <xs:attribute name="UnitPrice" type="xs:string" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

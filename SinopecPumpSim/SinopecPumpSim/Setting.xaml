@@ -1,0 +1,23 @@
+﻿<Window x:Class="SinopecPumpSim.Setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Setting" Height="248" Width="300">
+    <Grid>
+        <Label Content="通讯端口" HorizontalAlignment="Left" Margin="30,29,0,0" VerticalAlignment="Top"/>
+        <Label Content="通讯速率" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="校验位&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,86,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label Content="停止位" HorizontalAlignment="Left" Margin="30,116,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label Content="起始位" HorizontalAlignment="Left" Margin="30,146,0,0" VerticalAlignment="Top" Height="25"/>
+        <TextBox Name="Port" HorizontalAlignment="Left" Height="26" Margin="125,29,0,0" TextWrapping="Wrap" Text="COM3" VerticalAlignment="Top" Width="59"/>
+        <TextBox Name ="Baudrate" HorizontalAlignment="Left" Height="26" Margin="125,62,0,0" TextWrapping="Wrap" Text="9600" VerticalAlignment="Top" Width="59"/>
+        <TextBox Name ="Parity" HorizontalAlignment="Left" Height="26" Margin="125,95,0,0" TextWrapping="Wrap" Text="None" VerticalAlignment="Top" Width="59"/>
+        <TextBox Name ="Stopbit" HorizontalAlignment="Left" Height="26" Margin="125,125,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59"/>
+        <TextBox Name ="Startbit" HorizontalAlignment="Left" Height="26" Margin="125,155,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59"/>
+        <Button Name ="OK" Content="确定" HorizontalAlignment="Left" Margin="207,186,0,0" VerticalAlignment="Top" Width="75" Click="OK_Click"/>
+        <Label Content="数据位" HorizontalAlignment="Left" Margin="30,176,0,0" VerticalAlignment="Top" Height="25"/>
+        <TextBox Name ="Databits" HorizontalAlignment="Left" Height="26" Margin="125,185,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="59"/>
+        <Label Content="油枪数量" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="PumpNumber" HorizontalAlignment="Left" Height="26" Margin="125,10,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="59"/>
+
+    </Grid>
+</Window>
