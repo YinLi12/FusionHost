@@ -3,16 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             mc:Ignorable="d" 
-             d:DesignHeight="485.833" d:DesignWidth="569.167">
-    <Grid HorizontalAlignment="Left" Height="436" Margin="23,11,0,0" VerticalAlignment="Top" Width="562">
+             mc:Ignorable="d" Height="503.377" Width="768.898">
+    <Grid HorizontalAlignment="Left" Height="459" Margin="49,10,-94,0" VerticalAlignment="Top" Width="707">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="151*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="61*"/>
+        </Grid.RowDefinitions>
         <Label Content="金额" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top" Height="26" Width="34" />
         <Label Content="油量" HorizontalAlignment="Left" Margin="20,29,0,0" VerticalAlignment="Top" Height="26" Width="34" />
-        <TextBox Name ="AmoutBox" HorizontalAlignment="Left" Height="23" Margin="73,1,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120" TextChanged="AmountBoxTextChanged" />
-        <TextBox Name ="Volumebox"  HorizontalAlignment="Left" Height="23" Margin="73,32,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120" TextChanged="VolumetBoxTextChanged" />
-        <TextBox Name ="ReceiptBox" HorizontalAlignment="Left" Height="175" Margin="375,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" />
-        <TextBox Name ="ScreenBox" HorizontalAlignment="Left" Height="175" Margin="20,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" />
-        <Grid HorizontalAlignment="Left" Height="163" Margin="20,273,0,0" VerticalAlignment="Top" Width="265" >
+        <TextBox Name ="AmoutBox" HorizontalAlignment="Left" Height="23" Margin="73,1,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="57" TextChanged="AmountBoxTextChanged" />
+        <TextBox Name ="Volumebox"  HorizontalAlignment="Left" Height="23" Margin="73,32,0,0" TextWrapping="Wrap" Text="0.000" VerticalAlignment="Top" Width="57" TextChanged="VolumetBoxTextChanged" />
+        <TextBox Name ="ReceiptBox" HorizontalAlignment="Left" Height="175" Margin="119,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142" Grid.Row="1" Grid.Column="1" />
+        <TextBox Name ="ScreenBox" HorizontalAlignment="Left" Height="175" Margin="20,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" Grid.Row="1" />
+        <Grid HorizontalAlignment="Left" Height="181" Margin="38,1.898,0,0" VerticalAlignment="Top" Width="249" Grid.Row="2" >
             <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" Margin="0,0,0,0" Click="KeypadClick"/>
             <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40"  Margin="40,0,0,0" Click="KeypadClick"/>
             <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40"  Margin="80,0,0,0" Click="KeypadClick"/>
@@ -29,11 +37,67 @@
             <Button Name ="PresetVolume" Content="预设油量" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40"  Margin="120,40,0,0" Click="KeypadClick"/>
             <Button Name ="Dot" Content="." HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40"  Margin="120,80,0,0" Click="KeypadClick"/>
             <Button Name ="OK" Content="确定" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40"  Margin="120,120,0,0" Click="KeypadClick"/>
-            <Button Name ="InsertCard" Content="插卡" HorizontalAlignment="Left" Margin="180,120,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.231,-0.348"/>
-            <Button Name ="LoadCards"  Content="导入卡" HorizontalAlignment="Left" Margin="180,18,0,0" VerticalAlignment="Top" Width="75"/>
-            <ComboBox Name ="Cards" HorizontalAlignment="Left" Margin="180,71,0,0" VerticalAlignment="Top" Width="75"/>
-            <Label Content="IC卡" HorizontalAlignment="Left" Margin="180,47,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Button Name ="ClearReceipt" Content="清除" HorizontalAlignment="Left" Margin="415,253,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="IC卡" HorizontalAlignment="Left" Margin="239,56,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <Label>油枪:</Label>
+                <CheckBox Margin="10, 0, 40, 0" 
+                                              Name="rbNozzleA" 
+                                              IsChecked="{Binding Path=pump.bNozzleA, Mode=TwoWay}" 
+                                              Checked="NozzleSelector_Checked"
+                                              Unchecked="NozzleSelector_Checked"
+                                              Tag="1"
+                                              IsEnabled="{Binding Path=pump.NozzleAEnabled}">A</CheckBox>
+                <CheckBox Margin="10, 0, 40, 0" 
+                                              Name="rbNozzleB" 
+                                              IsChecked="{Binding Path=pump.bNozzleB, Mode=TwoWay}" 
+                                              Checked="NozzleSelector_Checked" 
+                                              Unchecked="NozzleSelector_Checked" 
+                                              ToolTip="Nozzle B"
+                                              Tag="2"
+                                              IsEnabled="{Binding Path=pump.NozzleBEnabled}">B</CheckBox>
+                <CheckBox Margin="10, 0, 40, 0" 
+                                              Name="rbNozzleC" 
+                                              IsChecked="{Binding Path=pump.bNozzleC, Mode=TwoWay}" 
+                                              Checked="NozzleSelector_Checked" 
+                                              Unchecked="NozzleSelector_Checked" 
+                                              ToolTip="Nozzle C" 
+                                              Tag="3"
+                                              IsEnabled="{Binding Path=pump.NozzleCEnabled}">C</CheckBox>
+                <CheckBox Margin="10, 0, 40, 0" 
+                                              x:Name="rbNozzleD" 
+                                              IsChecked="{Binding pump.bNozzleD, Mode=TwoWay}" 
+                                              Checked="NozzleSelector_Checked" 
+                                              Unchecked="NozzleSelector_Checked" 
+                                              ToolTip="Nozzle D" 
+                                              Tag="4"
+                                              IsEnabled="{Binding pump.NozzleDEnabled}" RenderTransformOrigin="2.233,0.35" Content="D"/>
+                <Button x:Name="Fuellin" Content="加油" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,40,0" VerticalAlignment="Top" Width="49"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>油价:</Label>
+                <TextBox Width="40" Height="15"  Margin="0,0,0,0"
+                         x:Name="Grade1"
+                         Text ="{Binding pump.Nozzle1.Grade.Price}"/>
+                <TextBox Width="40" Height="15"  Margin="31,0,0,0"
+                         x:Name="Grade2"
+                         Text ="{Binding pump.Nozzle2.Grade.Price}"/>
+                <TextBox Width="40" Height="15"  Margin="35,0,0,0"
+                         x:Name="Grade3"
+                         Text ="{Binding pump.Nozzle3.Grade.Price}"/>
+                <TextBox Width="40" Height="15"  Margin="33,0,0,0"
+                         x:Name="Grade4"
+                         Text ="{Binding pump.Nozzle4.Grade.Price}"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel  Grid.Row="2" Grid.Column="1" >
+            <Button x:Name ="InsertCard" Content="插卡" Margin="5" VerticalAlignment="Top" RenderTransformOrigin="0.231,-0.348" Width="75"/>
+            <Button x:Name ="LoadCards"  Content="导入卡" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Top" Width="75"/>
+            <Label Content="IC卡" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Top" Width="75"/>
+            <ComboBox x:Name ="Cards"  Margin="5" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75"/>
+        </StackPanel>
+        <Button Name ="ClearReceipt" Content="清除" HorizontalAlignment="Left" Margin="159,187,0,0" VerticalAlignment="Top" Width="84" Grid.Row="1" Grid.Column="1" Height="22" Grid.RowSpan="2"/>
+
     </Grid>
 </UserControl>
