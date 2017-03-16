@@ -58,6 +58,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Config\PumpSetting.cs" />
+    <Compile Include="Config\StationInfo.cs" />
+    <Compile Include="Dispenser.cs" />
+    <Compile Include="DispenserMgr.cs" />
+    <Compile Include="Pump.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="PumpMgr.cs" />
     <Compile Include="Setting.xaml.cs">
       <DependentUpon>Setting.xaml</DependentUpon>
     </Compile>
@@ -65,6 +72,7 @@
     <Compile Include="Dispenser.xaml.cs">
       <DependentUpon>Dispenser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Config\StationConfig.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -118,6 +126,15 @@
       <Project>{599DCBA1-1E1F-436D-88A2-CFEB7D3651B1}</Project>
       <Name>MainUI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Sinopec_KaJiLianDongV1.1MessageParser\Sinopec_KaJiLianDongV1.1MessageParser.csproj">
+      <Project>{9C84D0D5-F7A0-4B14-B087-A459E567C153}</Project>
+      <Name>Sinopec_KaJiLianDongV1.1MessageParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Config\PumpSetting.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

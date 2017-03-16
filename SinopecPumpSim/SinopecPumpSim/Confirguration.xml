@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
 <PumpSettings>
 <PumpSetting>
 <Address>1</Address>
@@ -30,4 +29,3 @@
 </Nozzles>
 </PumpSetting>
 </PumpSettings>
-</Configuration>

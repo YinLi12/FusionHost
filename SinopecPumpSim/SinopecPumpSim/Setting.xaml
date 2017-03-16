@@ -1,23 +1,49 @@
-﻿<Window x:Class="SinopecPumpSim.Setting"
+﻿<Window
+        x:Class="SinopecPumpSim.Setting"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Setting" Height="248" Width="300">
-    <Grid>
-        <Label Content="通讯端口" HorizontalAlignment="Left" Margin="30,29,0,0" VerticalAlignment="Top"/>
-        <Label Content="通讯速率" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top"/>
-        <Label Content="校验位&#xD;&#xA;" HorizontalAlignment="Left" Margin="30,86,0,0" VerticalAlignment="Top" Height="25"/>
-        <Label Content="停止位" HorizontalAlignment="Left" Margin="30,116,0,0" VerticalAlignment="Top" Height="25"/>
-        <Label Content="起始位" HorizontalAlignment="Left" Margin="30,146,0,0" VerticalAlignment="Top" Height="25"/>
-        <TextBox Name="Port" HorizontalAlignment="Left" Height="26" Margin="125,29,0,0" TextWrapping="Wrap" Text="COM3" VerticalAlignment="Top" Width="59"/>
-        <TextBox Name ="Baudrate" HorizontalAlignment="Left" Height="26" Margin="125,62,0,0" TextWrapping="Wrap" Text="9600" VerticalAlignment="Top" Width="59"/>
-        <TextBox Name ="Parity" HorizontalAlignment="Left" Height="26" Margin="125,95,0,0" TextWrapping="Wrap" Text="None" VerticalAlignment="Top" Width="59"/>
-        <TextBox Name ="Stopbit" HorizontalAlignment="Left" Height="26" Margin="125,125,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59"/>
-        <TextBox Name ="Startbit" HorizontalAlignment="Left" Height="26" Margin="125,155,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59"/>
-        <Button Name ="OK" Content="确定" HorizontalAlignment="Left" Margin="207,186,0,0" VerticalAlignment="Top" Width="75" Click="OK_Click"/>
-        <Label Content="数据位" HorizontalAlignment="Left" Margin="30,176,0,0" VerticalAlignment="Top" Height="25"/>
-        <TextBox Name ="Databits" HorizontalAlignment="Left" Height="26" Margin="125,185,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="59"/>
-        <Label Content="油枪数量" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="PumpNumber" HorizontalAlignment="Left" Height="26" Margin="125,10,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="59"/>
-
+        Title="设置" Height="300" Width="400">
+    <Grid >
+        <TabControl x:Name="TabControl" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="260" Width="372">
+            <TabItem Header="油站信息">
+                <Grid Background="#FFE5E5E5">
+                    <StackPanel Orientation="Vertical">
+                        <Label x:Name="Ver" Content="版本"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="34"/>
+                        <Label x:Name="Prov" Content="省代码" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                        <Label x:Name="City" Content="地市代码" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                        <Label x:Name="Supervisor" Content="上级单位代码" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                        <Label x:Name="S_ID" Content="加油站ID" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                        <Label x:Name="POS_P" Content="通讯终端逻辑编号ID" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                        <Label x:Name="GUN_N" Content="枪数" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                    </StackPanel>
+                    <StackPanel x:Name="StationInfoTab" Orientation="Vertical"  Margin="156,0,0,0">
+                        <TextBox x:Name="VertBox" HorizontalAlignment="Left" Margin="2" TextWrapping="Wrap" Text="{Binding Path = Ver}" VerticalAlignment="Top"/>
+                        <TextBox x:Name="ProvBox" HorizontalAlignment="Left" Margin="2" TextWrapping="Wrap" Text="{Binding Path = Prov_省代号}" VerticalAlignment="Top"/>
+                        <TextBox x:Name="CityBox" HorizontalAlignment="Left" Margin="2" TextWrapping="Wrap" Text="{Binding Path = City_地市代码}" VerticalAlignment="Top"/>
+                        <TextBox x:Name="SupervisorBox" HorizontalAlignment="Left" Margin="2" TextWrapping="Wrap" Text="{Binding Path = Superior_上级单位代号}" VerticalAlignment="Top"/>
+                        <TextBox x:Name="S_IDBox" HorizontalAlignment="Left" Margin="2" TextWrapping="Wrap" Text="{Binding Path= S_ID_加油站ID}" VerticalAlignment="Top"/>
+                        <TextBox x:Name="POS_PBox" HorizontalAlignment="Left" Margin="2" TextWrapping="Wrap" Text="{Binding Path= POS_P_通讯终端逻辑编号}" VerticalAlignment="Top"/>
+                        <TextBox x:Name="GUN_NBox" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding Path= GUN_N_油枪数}" VerticalAlignment="Top"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name ="PumpSettingTab" Header="加油机设置">
+                <Grid>
+                    <ListView ItemsSource="{Binding Path= PumpSettings.PumpSetting}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Label  Content="加油机号"/>
+                                    <TextBox   Text="{Binding Path=Address}"/>
+                                    <Label  Content="通讯端口" />
+                                    <TextBox  Text="{Binding Path=PortName}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button x:Name="OK" Content="应用" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="36" Click="OK_Click_1" Margin="0,0,29,21" RenderTransformOrigin="-0.305,0.392"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
-</Window>
+</Window> 

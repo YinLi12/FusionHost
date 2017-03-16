@@ -18,15 +18,16 @@ namespace SinopecPumpSim
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
-    public partial class Dispenser : UserControl
+    public partial class DispenserCtrl : UserControl
     {
         private readonly Queue<string> _keyBuffer;
-        private PumpSetting _pumpSetting;
+        private readonly Dispenser _dispenser = new Dispenser();
 
-        public Dispenser()
-        { 
-            _keyBuffer = new Queue<string>();
+        public DispenserCtrl()
+        {            
             InitializeComponent();
+            DataContext = _dispenser;
+            _keyBuffer = new Queue<string>();
         }    
 
         private void AmountBoxTextChanged(object sender, TextChangedEventArgs e)

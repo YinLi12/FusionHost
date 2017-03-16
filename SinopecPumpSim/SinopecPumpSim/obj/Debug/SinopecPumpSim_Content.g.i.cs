@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/configuration.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("config/pumpsetting.xml")]
 
 
